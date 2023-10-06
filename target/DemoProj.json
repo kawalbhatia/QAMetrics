@@ -1,0 +1,195 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-22T08:03:57.243Z",
+        "line": 5,
+        "name": "Validate update of valid accepted date in VMD and to Elastic search through rhub pub sub interface",
+        "description": "",
+        "id": "validate-ado-update-with-test-results;validate-update-of-valid-accepted-date-in-vmd-and-to-elastic-search-through-rhub-pub-sub-interface",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9976700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user connects to VMD database",
+            "match": {
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userConnectsToVMDDatabase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1635400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user validates the \"vmd\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vmd",
+                  "offset": 20
+                }
+              ],
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userValidatesTheTable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1997100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user should find the fields \"adevrtised_location_code\" in the \"Ryder_Combo\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "adevrtised_location_code",
+                  "offset": 29
+                },
+                {
+                  "val": "Ryder_Combo",
+                  "offset": 63
+                }
+              ],
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userShouldFindTheFieldsInTheTable(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user should be able to validate the valid data in the field",
+            "match": {
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userShouldBeAbleToValidateTheValidDataInTheField()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Featuretagtest"
+          },
+          {
+            "name": "@RegressionUI"
+          },
+          {
+            "name": "@ADOSearch"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-02-22T08:03:57.407Z",
+        "line": 12,
+        "name": "Validate accepted date of invalid format is not updated in VMD and to Elastic search through rhub pub sub interface",
+        "description": "",
+        "id": "validate-ado-update-with-test-results;validate-accepted-date-of-invalid-format-is-not-updated-in-vmd-and-to-elastic-search-through-rhub-pub-sub-interface",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 635500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user connects to VMD database",
+            "match": {
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userConnectsToVMDDatabase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 996100,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user validates the \"vmd\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "vmd",
+                  "offset": 20
+                }
+              ],
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userValidatesTheTable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userShouldFindTheFieldsInTheTable(GoogleSearch_steps.java:183)\r\n\tat ✽.user should find the fields \"image_electronic_location_code\" in the \"Ryder_Combo\" table(classpath:featurefile/TestADO.feature:15)\r\n",
+              "duration": 20010794500,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "user should find the fields \"image_electronic_location_code\" in the \"Ryder_Combo\" table",
+            "match": {
+              "arguments": [
+                {
+                  "val": "image_electronic_location_code",
+                  "offset": 29
+                },
+                {
+                  "val": "Ryder_Combo",
+                  "offset": 69
+                }
+              ],
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userShouldFindTheFieldsInTheTable(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 997600,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user should be able to validate the valid data in the field",
+            "match": {
+              "location": "com.ksb.qametrics.test.stepdefinition.GoogleSearch_steps.userShouldBeAbleToValidateTheValidDataInTheField()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Featuretagtest"
+          },
+          {
+            "name": "@RegressionUI"
+          },
+          {
+            "name": "@ADOSearch"
+          }
+        ]
+      }
+    ],
+    "name": "Validate ADO update with test results",
+    "description": "",
+    "id": "validate-ado-update-with-test-results",
+    "keyword": "Feature",
+    "uri": "classpath:featurefile/TestADO.feature",
+    "tags": [
+      {
+        "name": "@Featuretagtest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
